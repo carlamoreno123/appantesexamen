@@ -8,65 +8,68 @@ class Homescreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(),
-        body: Column(
-          children: [
-            Imagenes(),//ver entidad imagenes
-            Container(
-              child: Row(
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: [
+              Imagenes(),//ver entidad imagenes
+              Container(
+                child: Row(
+                  children: [
+                    Container(
+                      height: 100,
+                      width: 50,
+                      color: Color.fromARGB(186, 39, 130, 74),
+                    ),
+                    Container(
+                      height: 100,
+                      width: 50,
+                      color: Color.fromARGB(186, 39, 130, 74),
+                    ),
+                    Container(
+                      height: 100,
+                      width: 50,
+                      color: Color.fromARGB(186, 39, 130, 74),
+                    ),
+                  ],
+                ),
+              ),
+              ElevatedButton(onPressed: () {}, child: Text('report sumary')),
+              Container(
+                child: Column(
+                  children: [
+                    Text('patient´s name'),
+                    Row(
+                      children: [
+                        Text('cameron'),
+                        Text('change'),
+                      ],
+                    )
+                  ],
+                ),
+              ),
+              Row(
                 children: [
-                  Container(
-                    height: 100,
-                    width: 50,
-                    color: Color.fromARGB(186, 39, 130, 74),
-                  ),
-                  Container(
-                    height: 100,
-                    width: 50,
-                    color: Color.fromARGB(186, 39, 130, 74),
-                  ),
-                  Container(
-                    height: 100,
-                    width: 50,
-                    color: Color.fromARGB(186, 39, 130, 74),
-                  ),
+                  ElevatedButton(onPressed: (){}, child: null,),
+                  ElevatedButton(onPressed: (){}, child: null, ),
                 ],
               ),
-            ),
-            ElevatedButton(onPressed: () {}, child: Text('report sumary')),
-            Container(
-              child: Column(
+              Row(
                 children: [
-                  Text('patient´s name'),
-                  Row(
-                    children: [
-                      Text('cameron'),
-                      Text('change'),
-                    ],
-                  )
+                  Text('details'),
+                  Text('edit'),
                 ],
               ),
-            ),
-            Row(
-              children: [
-                ElevatedButton(onPressed: (){}, child: null,),
-                ElevatedButton(onPressed: (){}, child: null, ),
-              ],
-            ),
-            Row(
-              children: [
-                Text('details'),
-                Text('edit'),
-              ],
-            ),
-            Container(
-              child: Column(
-                children: [
-                  Text(''),
-                  Text(''),
-                ],
-              ),
-            )
-          ],
+              Container(
+                child: Column(
+                  children: [
+                    Text(''),
+                    Text(''),
+                  ],
+                ),
+              )
+            ],
+          ),
         ));
   }
 }
