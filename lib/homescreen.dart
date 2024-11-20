@@ -25,17 +25,17 @@ class Homescreen extends StatelessWidget {
                     Container(
                       height: 150,
                       width: 100,
-                      color: Color.fromARGB(98, 58, 195, 115),
+                      color: Color.fromARGB(255, 0, 0, 0),
                     ),
                     Container(
                       height: 150,
                       width: 100,
-                      color: Color.fromARGB(98, 44, 177, 99),
+                      color: Color.fromARGB(255, 0, 0, 0),
                     ),
                     Container(
                       height: 150,
                       width: 100,
-                      color: Color.fromARGB(98, 40, 209, 110),
+                      color: Color.fromARGB(255, 0, 0, 0),
                     ),
                   ],
                 ),
